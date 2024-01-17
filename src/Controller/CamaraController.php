@@ -8,11 +8,28 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CamaraController extends AbstractController
 {
-    #[Route('/camara', name: 'app_camara')]
-    public function index(): Response
+    #[Route('/camara', name: 'acceuil')]
+    public function index()
     {
         return $this->render('camara/index.html.twig', [
-            'controller_name' => 'CamaraController',
+            
+        ]);
+    }
+	#[Route('/page1', name: 'page1')]
+    public function page1()
+    {
+        return $this->render('camara/page1.html.twig', [
+        ]);
+    }
+	#[Route('/page2', name: 'page2')]
+    public function page2()
+    {
+        return $this->render('camara/page2.html.twig', [
+        ]);
+    }#[Route('/ensavoirplus', name: 'En savoir plus ')]
+    public function ensavoirplus()
+    {
+        return $this->render('camara/En_savoir_plus.html.twig', [
         ]);
     }
 }
