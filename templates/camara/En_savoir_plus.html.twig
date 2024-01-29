@@ -1,17 +1,90 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}awa's website{% endblock %}
+{% block title %}awa's web site{% endblock %}
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    .example-wrapper { margin: 1em auto; max-width: 1000px; width: 100%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #f4bbff; padding: 2px 6px; }</style>
+	 {%block style%}<style>  body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-<div class="example-wrapper">
-    <h1>ya rien a savoir  </h1>
-	<p> curieux</p>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
 
-</div>
-		
+        .text {
+            width: 60%; /* Ajustez la largeur selon vos besoins */
+        }
+
+        .image {
+            width: 40%;
+			height: 180 px ;
+			/* Ajustez la largeur selon vos besoins */
+        }
+
+        img {
+            max-width: 60%;
+            height: 90 px;
+        }.blog-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 4px solid #E59866 ; /* Ajoutez une bordure pour la séparation visuelle entre les sections */
+			border-radius: 100 px ;
+        }
+</style>{%endblock%}
+	<body>
+	<header><h1> coucou chouchou <h1></header>
+	 <div class="container">
+        <div class="text">
+		<div class="blog-section">
+        <div class="text">
+            <h2>Cuisine</h2>
+            <p>j'aime la cuisine $
+			</p>
+        </div>
+        <div class="image">
+            <img src="yassa.jpg" alt="Image Films">
+        </div>
+    </div>
+
+    <div class="blog-section">
+        <div class="text">
+            <h2>Corrée</h2>
+            <p>Présentation brève des dernières sorties musicales.</p>
+        </div>
+        <div class="image">
+            <img src="image.jpg" alt="Image Musique">
+        </div>
+    </div>
+
+    <div class="blog-section">
+        <div class="text">
+            <h2>kpop Mangas </h2>
+            <p>Présentation brève des plats du jour ou de nouvelles recettes.</p>
+        </div>
+        <div class="image">
+            <img src="capture.jpg" alt="Image Plat">
+        </div>
+    </div>
+            
+        </div>
+        <div class="image">
+            <img src="collage1.jpg" >
+        </div>
+    </div>
+
+			
+			
+            
+  
 {% endblock %}

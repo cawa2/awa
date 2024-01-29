@@ -7,7 +7,10 @@
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
-			<link rel= "stylesheet" href="https://bootswatch.com/5/slate/bootstrap.min.css">
+			<link rel= "stylesheet" href="https://bootswatch.com/5/spacelab/bootstrap.min.css">
+			<style>
+				
+				 </style>
         {% endblock %}
 
         {% block javascripts %}
@@ -15,46 +18,34 @@
         {% endblock %}
     </head>
     <body>
-	<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+	<header>
+	<nav class="navbar navbar-expand-lg bg-warning" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand active" href="#">e portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarColor01">
+    <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link " href="/camara">accueil
+          <a class="nav-link " href="/camara">Me_awa
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/page1">page1</a>
+          <a class="nav-link" href="/page1">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/page2">page2</a>
+          <a class="nav-link" href="/page2">Portfolio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">page3</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>
+       
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      
     </div>
   </div>
 </nav>
+    
+
         {% block body %}
 		
 		{% endblock %}
