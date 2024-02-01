@@ -64,55 +64,82 @@
 </head>
 <body>
     <header>
-        <h1>Votre Nom</h1>
-        <p>Développeur Web</p>
+        <h1>Awa CAMARA</h1>
+        <p><strong>Mail</strong>: cawa3002@gmail.com<br><strong>Numéro mobile</strong>: 0789948204<br><strong>Adresse</strong>:24rue Fontquentin</p>
     </header>
 
     <div class="container">
         <div class="section left">
-            <h2>Section Gauche 1</h2>
-            <p>Contenu de la section à gauche.</p>
+            <h2>Compétences</h2>
+				<ul>
+					<li>Intermédiaire entre professeurs et étudiants  </li>
+					<li>Expliquer et corriger les exercices des éléves</li>
+					<li>Prise de constantes des patients à l’hôpital  </li>
+					<li>Travail d’équipe,communication efficace</li>
+					<li> Maîtrise de pack office  </li>
+					<br>
+				</ul>	
         </div>
 
         <div class="section right">
-            <h2>Section Droite 1</h2>
-            <p>Contenu de la section à droite.</p>
+            <h2>Formations</h2>
+                <h5>2022 - 2023      Université UCAD,Dakar</h5>
+				
+					Faculté de médecine et d’odontologie<br>
+					<br>
+				<h5>2023 - 2024Institut universitaire de  technologie de Roanne</h5>
+					 BUT en réseaux et télécommunications<br>
+					 
+
+								   
+				        
         </div>
 
         <div class="section left">
-            <h2>Section Gauche 2</h2>
-            <p>Contenu de la section à gauche.</p>
+            <h2>Expériences professionnelles</h2>
+			<ul>
+                <li>Accompagnateur collégiens					            </li>
+				<li>Membre  à l’amical des étudiants </li>
+				<li>Co-gèrante laverie familiale                        </li>
+				<li>Stage à l’hôpital Principal    </li>
+			</ul>	
         </div>
-
-        <!-- Ajoutez d'autres sections en alternance à gauche et à droite -->
+		
+		 <div class="section right">
+            <h2>Loisirs/Langues</h2>
+			<ul>
+                <li>Cuisine</li>
+				<li>Films et pop coréennes</li>
+				<li>Voyages  </li>
+				<li>langue maternelle: wolof</li>
+				<li>Francais c1</li>
+				<li>Anglais A2</li>
+				
+			</ul>	
+        </div>
+		 
     </div>
-	<form>
-    <label for="nom">Nom:</label>
-    <input type="text" id="nom" name="nom" required>
+	<section class="contact" id="contact">
+        <h1 class="heading"><span>Formulaire</span></h1>
 
-    <label for="prenom">Prénom:</label>
-    <input type="text" id="prenom" name="prenom" required>
+        <div class="row" style="align-item:center;">
+            <form method="post" action="awa">
+			<label for"name">Nom :</label>
+			
+                <input type="text" id="name" name="name"  required>
+				<label for"surname">prénom :</label>
+				<input type="text" id="surname" name="surname"  required>
+				<label for"email">Email :</label>
+                <input type="email" id="email" name="email"  required>
+             
+               
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <!-- Bouton pour générer le PDF -->
-    <button type="button" onclick="printCV()">Télécharger en PDF</button>
-</form>
-
-<script>
-    function printCV() {
-        var printWindow = window.open('', '_blank');
-        var content = document.getElementById('pdf-container').innerHTML;
-
-        printWindow.document.open();
-        printWindow.document.write('<html><head><title>Votre CV</title></head><body>' + content + '</body></html>');
-        printWindow.document.close();
-
-        printWindow.print();
-    }
-</script>
-</div> <!-- Fermez la dernière div pour englober le contenu -->
+                <button type="submit" class="btn btn-order rounded-0" style="color:black;">
+                    <a href="/awa.pdf" download="awa.pdf">Télécharger CV<i class="fas fa-paper-plane"></i></a>
+                </button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
 {% endblock %}

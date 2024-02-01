@@ -32,4 +32,17 @@ class CamaraController extends AbstractController
         return $this->render('camara/En_savoir_plus.html.twig', [
         ]);
     }
+	#[Route('/awa', name: 'cam')]
+	public function camara()
+	{
+	  
+    $name = $request->request->get('name');
+    $surname = $request->request->get('surname');
+    $email = $request->request->get('email');
+
+  
+	 return $this->render('public/awa.pdf', [
+        ]);
+	}
+
 }

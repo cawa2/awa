@@ -9,7 +9,14 @@
             {{ encore_entry_link_tags('app') }}
 			<link rel= "stylesheet" href="https://bootswatch.com/5/spacelab/bootstrap.min.css">
 			<style>
-				
+				footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1; /* Ajoutez la couleur de fond souhaitée */
+  text-align: center; /* Ajustez selon vos besoins */
+  padding: 0.2em; /* Ajustez selon vos besoins */
+}
 				 </style>
         {% endblock %}
 
@@ -44,7 +51,9 @@
     </div>
   </div>
 </nav>
-    
+    <footer>
+        &copy; {{ "now"|date("Y") }} awa's Website. Tous droits réservés.
+    </footer>
 
         {% block body %}
 		
